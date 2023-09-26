@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 0.09em;
+    margin-top:1em;
+    margin-bottom: 0.5em;
+    font-size: 2.8em;
+}
+
+/* Loader */
+
+.loader{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(255, 255, 255, 0.3);
+}
+
+.loader img{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* image container */
+
+.image-container{
+    margin: 10px 20%;
+    /* background-color: black; */
+}
+
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+
+/* Medai Query >> Large Smartphone */
+
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.2em;
+    }
+
+    .image-container{
+        margin: 10px 30px;
+    }
+}
